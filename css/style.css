@@ -1,8 +1,28 @@
 @charset "UTF-8";
 
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body {
+  font-family: "Raleway" ;
+}
+
+.btn, .our-text, .footer {
+  font-family: "Lato" ;
+}
+
 .inner {
   width: 1100px;
   margin: 0 auto;
+}
+
+.content-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-btn {
@@ -10,8 +30,9 @@
   color: #fff;
   font-size: 12px;
   padding: 14px 12px;
-  position: relative;
+  position: absolute;
   left: 90%;
+  top: 20%;
 }
 
 .btn:hover {
@@ -46,6 +67,7 @@
   font-weight: 700;
   margin-bottom: 20px;
   padding-top: 250px;
+  box-sizing: border-box;
 }
 
 .theme-subtitle {
@@ -73,7 +95,7 @@
   font-size: 24px;
 }
 
-.fa-mobile-alt {
+.what-img {
   color: #fff;
   padding-top: 50px;
   text-align: center;
@@ -92,21 +114,13 @@
 }
 
 .article-title {
-  color: #c0c0c0;
   padding-top: 60px;
   font-size: 24px;
 }
 
-.article-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .article-text {
-  color: #c0c0c0;
   padding-right: 90px;
-  width: 550px;
+  width: 500px;
   padding-bottom: 70px;
 }
 
@@ -118,31 +132,31 @@
   margin-bottom: 80px;
 }
 
-.article-img {
+.article-img-box {
   margin-left: 100px;
   opacity: 0.7;
 }
 
-.article-img:hover {
+.article-img-box:hover {
   transition: all .3;
   opacity: 1;
 }
 
-.article-content {
+.article-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   padding-top: 40px;
   padding-bottom: 90px;
+  padding-left: 50px;
 }
 
-.article-img:nth-child(1) {
-  margin-left: 0;
-}
-
-.article-img:nth-child(4) {
-  margin-left: 25px;
-}
-
-.article-img:nth-child(-n+3) {
+.article-img-box:nth-child(-n+3) {
   margin-bottom: 80px;
+}
+
+.article-img-box:nth-child(3n+1) {
+  margin-left: 0px;
 }
 
 .our-inner {
@@ -157,11 +171,6 @@
   font-size: 24px;
 }
 
-.content-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .our-box {
   padding-bottom: 100px;
@@ -169,6 +178,10 @@
 
 .our-figure {
   margin-left: 180px;
+}
+
+.our-figure:nth-child(1) {
+  margin-left: 0px;
 }
 
 .our-text {
@@ -185,13 +198,14 @@
 }
 
 .nav-icon {
-  width: 185px;
-  height: 100px;
   color: #74cfae;
-  text-align: center;
 }
 
-.nav-icon:hover {
+.nav-icon-box {
+  padding: 50px 92.5px;
+}
+
+.nav-icon-box:hover {
   background-color: #fff;
   transition: all .3s;
 }
@@ -208,3 +222,8 @@
   position: relative;
   left: 90%;
 }
+
+
+右に大きな余白
+innerが機能してない
+innerに収まってない(header)
