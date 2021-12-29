@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="format-detection" content="telephone=no">
-    <meta name="viewpoint" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/lib/all.css">
@@ -14,98 +14,145 @@
     <meta name="description" content="This is my portfolio site.">
     <meta name="keywords" content="bolt, bootstrap, portfolio">
   </head>
-  <body >
-    <header class="header">
-      <div class="inner">
-        <i class="fas fa-bolt fa-2x"></i>
-        <a class="btn header-btn" href="">contact</a>
-      </div>
-    </header>
-    <main>
-      <div class="inner theme-inner">
-        <h1 class="theme-title">Bolt Theme</h1>
-        <p class="theme-subtitle">FREE BOOTSTRAP THEMES</p>
-      </div>
-      <section class="inner what-inner">
-        <img class="what-img" src="img/iphone.png">
-        <div class="what-box">
-          <h2 class="what-title">WHAT WE CAN DO?</h2>
-          <p class="what-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          </p>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <div class="inner header-inner">
+          <div class="header-icon">
+            <i class="fas fa-bolt fa-2x"></i>
+          </div>
+          <div class="menu-btn">
+            <span class="menu-line top"></span>
+            <span class="menu-line"></span>
+            <span class="menu-line bottom"></span>
+          </div>
+          <a class="btn header-btn sp-only" href="">Contact</a>
         </div>
-      </section>
-      <article class="inner article-inner">
-        <h2 class="article-title">OUR LATEST WORK</h2>
-        <div class="clearfix article-box">
-          <a class="article-img-box" href="">
-            <img class="article-img" src="img/01.jpg">
-          </a>
-          <a class="article-img-box" href="">
-            <img class="article-img" src="img/02.jpg">
-          </a>
-          <a class="article-img-box" href="">
-            <img class="article-img" src="img/03.jpg">
-          </a>
-          <a class="article-img-box" href="">
-            <img class="article-img" src="img/04.jpg">
-          </a>
-          <a class="article-img-box" href="">
-            <img class="article-img" src="img/05.jpg">
-          </a>
-          <a class="article-img-box" href="">
-            <img class="article-img" src="img/06.jpg">
-          </a>
+      </header>
+      <main>
+        <div class="theme">
+          <div class="inner theme-inner">
+            <h1 class="theme-title">Bolt Theme</h1>
+            <p class="theme-subtitle title-font">FREE BOOTSTRAP THEMES</p>
+          </div>
         </div>
-        <div class="content-box">
-          <p class="article-text">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
-          </p>
-          <a class="btn article-btn"href="">Email Me!</a>
+        <section class="what">
+          <div class="content-box responsive-box inner what-inner">
+            <img src="img/iphone.png">
+            <div class="what-box margin-none">
+              <h2 class="what-title title-font">WHAT WE CAN DO?</h2>
+              <p class="what-text">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+              </p>
+            </div>
+          </div>
+        </section>
+        <article class="article">
+          <div class="inner article-inner">
+            <h2 class="article-title title-font">OUR LATEST WORK</h2>
+            <ul class="content-box article-box responsive-box">
+              <li class="article-img-box">
+                <a class="link" href="">
+                  <img src="img/01.jpg">
+                </a>
+              </li>
+              <li class="article-img-box margin-none">
+                <a class="link" href="">
+                  <img src="img/02.jpg">
+                </a>
+              </li>
+              <li class="article-img-box margin-none">
+                <a class="link" href="">
+                  <img src="img/03.jpg">
+                </a>
+              </li>
+              <li class="article-img-box">
+                <a class="link" href="">
+                  <img src="img/04.jpg">
+                </a>
+              </li>
+              <li class="article-img-box margin-none">
+                <a class="link" href="">
+                  <img src="img/05.jpg">
+                </a>
+              </li>
+              <li class="article-img-box margin-none">
+                <a class="link" href="">
+                  <img src="img/06.jpg">
+                </a>
+              </li>
+            </ul>
+            <div class="content-box responsive-box article-text-box">
+              <p class="article-text title-font">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.
+              </p>
+              <a class="btn article-btn margin-none" href="">Email Me!</a>
+            </div>
+          </div>
+        </article>
+        <section class="our">
+          <div class="inner our-inner">
+            <h2 class="our-title title-font">OUR SKILLS</h2>
+            <ul class="content-box responsive-box our-figure-box">
+              <li class="our-figure">
+                <figure>
+                  <img src="img/circle_01.png">
+                  <figcaption class="our-text title-font">JavaScript</figcaption>
+                </figure>
+              </li>
+              <li class="our-figure margin-none">
+                <figure>
+                  <img src="img/circle_02.png">
+                  <figcaption class="our-text title-font">Bootstrap</figcaption>
+                </figure>
+              </li>
+              <li class="our-figure margin-none">
+                <figure>
+                  <img src="img/circle_03.png">
+                  <figcaption class="our-text title-font">WordPress</figcaption>
+                </figure>
+              </li>
+              <li class="our-figure margin-none">
+                <figure>
+                  <img src="img/circle_04.png">
+                  <figcaption class="our-text title-font">Photoshop</figcaption>
+                </figure>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <nav class="nav">
+          <div class="inner nav-inner">
+            <ul class="content-box responsive-box-sp">
+              <li class="nav-icon-box nav-icon-width">
+                <a class="link nav-link nav-icon-width" href="">
+                  <i class="nav-icon fab fa-facebook-f fa-3x"></i>
+                </a>
+              </li>
+              <li class="nav-icon-box nav-icon-width">
+                <a class="link nav-link nav-icon-width" href="">
+                  <i class="nav-icon fab fa-dribbble fa-3x"></i>
+                </a>
+              </li>
+              <li class="nav-icon-box nav-icon-width">
+                <a class="link nav-link nav-icon-width" href="">
+                  <i class="nav-icon fab fa-twitter fa-3x"></i>
+                </a>
+              </li>
+              <li class="nav-icon-box nav-icon-width">
+                <a class="link nav-link nav-icon-width" href="">
+                  <i class="nav-icon fas fa-envelope fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </main>
+      <footer class="footer title-font">
+        <div class="inner footer-inner">
+          <p class="footer-text">Crafted with♥by BlackTie.co.</p>
         </div>
-      </article>
-      <section class="inner our-inner">
-        <h2 class="our-title">OUR SKILLS</h2>
-        <div class="content-box our-box">
-          <figure class="our-figure">
-            <img class="our-img" src="img/circle_01.png">
-            <figcaption class="our-text">JavaScript</figcaption>
-          </figure>
-          <figure class="our-figure">
-            <img class="our-img" src="img/circle_02.png">
-            <figcaption class="our-text">Bootstrap</figcaption>
-          </figure>
-          <figure class="our-figure">
-            <img class="our-img" src="img/circle_03.png">
-            <figcaption class="our-text">WordPress</figcaption>
-          </figure>
-          <figure class="our-figure">
-            <img class="our-img" src="img/circle_04.png">
-            <figcaption class="our-text">Photoshop</figcaption>
-          </figure>
-        </div>
-      </section>
-      <nav class="inner nav-inner">
-        <div class="content-box">
-          <a class="nav-icon-box" href="">
-            <i class="nav-icon fab fa-facebook-f fa-3x"></i>
-          </a>
-          <a class="nav-icon-box" href="">
-            <i class="nav-icon fab fa-dribbble fa-3x"></i>
-          </a>
-          <a class="nav-icon-box" href="">
-            <i class="nav-icon fab fa-twitter fa-3x"></i>
-          </a>
-          <a class="nav-icon-box" href="">
-            <i class="nav-icon fas fa-envelope fa-3x"></i>
-          </a>
-        </div>
-      </nav>
-    </main>
-    <footer class="footer">
-      <div class="inner">
-        <div class="footer-text">Crafted with♥by BlackTie.co.</div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
